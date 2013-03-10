@@ -12,5 +12,6 @@ import net.minecraft.world.World;
  * @author Xeology
  */
 public interface ISneakUseWand {
+
     public boolean onSneakUseWand(World world, int x, int y, int z, EntityPlayer player, int face, float hX, float hY, float hZ);
 }

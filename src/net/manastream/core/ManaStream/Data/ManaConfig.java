@@ -34,49 +34,49 @@ public class ManaConfig {
 	    return new File(".");
 	}
     }
-    
-    private File getFile(){
-	File config=new File(getDataFolder(),"ManaStream.properties");
-	if (!config.exists()){
+
+    private File getFile() {
+	File config = new File(getDataFolder(), "ManaStream.properties");
+	if (!config.exists()) {
 	    try {
 		config.createNewFile();
 	    } catch (IOException ex) {
 	    }
 	}
-	return config;	
+	return config;
     }
-    
-    private Configuration getConfig(){
-	Configuration config=new Configuration(getFile());
+
+    private Configuration getConfig() {
+	Configuration config = new Configuration(getFile());
 	config.load();
 	return config;
     }
-    
-    private void save(Configuration config){
+
+    private void save(Configuration config) {
 	config.save();
     }
-    
-    public String getTexturePath(){
+
+    public String getTexturePath() {
 	return "/net/manastream/content/ManaStream/Textures";
     }
-    
-    public int getBlockID(String block,int def){
+
+    public int getBlockID(String block, int def) {
 	Configuration config = getConfig();
-	int id=config.get("Blocks", block, def).getInt();
-	config.save();
-	return id;
-    }    
-    
-    public int getItemID(String item,int def){
-	Configuration config = getConfig();
-	int id=config.get("Items", item, def).getInt();
+	int id = config.get("Blocks", block, def).getInt();
 	config.save();
 	return id;
     }
-    
-    public int getEntityID(String entity,int def){
+
+    public int getItemID(String item, int def) {
 	Configuration config = getConfig();
-	int id=config.get("Entity", entity, def).getInt();
+	int id = config.get("Items", item, def).getInt();
+	config.save();
+	return id;
+    }
+
+    public int getEntityID(String entity, int def) {
+	Configuration config = getConfig();
+	int id = config.get("Entity", entity, def).getInt();
 	config.save();
 	return id;
     }

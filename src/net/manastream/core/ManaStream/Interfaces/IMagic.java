@@ -9,9 +9,8 @@ package net.manastream.core.ManaStream.Interfaces;
  * @author Xeology
  */
 public interface IMagic {
-    
+
     public double getMagic(Object... data);
-    
+
     public int getPotency();
-    
 }

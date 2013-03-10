@@ -11,11 +11,10 @@ import net.minecraft.block.BlockContainer;
  * @author Xeology
  */
 public class ManaBlocks {
-    
+
     public BlockContainer BURNT_CHANNEL;
     public BlockContainer PRIMAL_CHANNEL;
     public BlockContainer POTENT_CHANNEL;
     public BlockContainer PURE_CHANNEL;
     public BlockContainer CHAOTIC_CHANNEL;
-    
 }

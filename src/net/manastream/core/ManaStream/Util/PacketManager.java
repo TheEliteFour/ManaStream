@@ -138,8 +138,7 @@ public class PacketManager implements IPacketHandler, IPacketReceiver {
 
     /**
      * Sends packets to clients around a specific coordinate. A wrapper using
-     * Vector3. See
-	 * {
+     * Vector3. See {
      *
      * @PacketDispatcher} for detailed information.
      */

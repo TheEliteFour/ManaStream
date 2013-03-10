@@ -26,12 +26,12 @@ public class Potency {
 	    potency = 4;
 	}
     }
-    
+
     public Potency(int potency) {
-	if (potency>4){
-	    potency=4;
+	if (potency > 4) {
+	    potency = 4;
 	}
-	this.potency=potency;
+	this.potency = potency;
     }
 
     public int getPotency() {

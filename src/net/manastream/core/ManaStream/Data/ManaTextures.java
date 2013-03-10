@@ -11,11 +11,10 @@ import java.io.File;
  * @author Xeology
  */
 public class ManaTextures {
-    
+
     public String BURNT_CHANNEL;
     public String PRIMAL_CHANNEL;
     public String POTENT_CHANNEL;
     public String PURE_CHANNEL;
     public String CHAOTIC_CHANNEL;
-    
 }

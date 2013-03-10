@@ -22,15 +22,14 @@ import net.minecraft.world.World;
  *
  * @ModificationAuthor Xeology
  * @OriginalAuthor Calclavia
- * 
- * This class is a modified version of ElectricityNetwork inside of UniversalElectricity.
- * The code has been modified and adapted to a new purpose and theme while trying to slim
- * and correct any short comings perceived by Xeology.  All credit for the original code
- * and process goes to it's rightful owner, I make no further claims other then the
- * modifications.
- * 
+ *
+ * This class is a modified version of ElectricityNetwork inside of
+ * UniversalElectricity. The code has been modified and adapted to a new purpose
+ * and theme while trying to slim and correct any short comings perceived by
+ * Xeology. All credit for the original code and process goes to it's rightful
+ * owner, I make no further claims other then the modifications.
+ *
  */
-
 public abstract class BlockMagicMachine extends BlockContainer implements ISneakUseWand {
 
     public BlockMagicMachine(int id, Material material) {

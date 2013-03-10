@@ -18,39 +18,33 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
 @SideOnly(Side.CLIENT)
-public class ClientProxy extends CommonProxy
-{
-	@Override
-	public void preInit()
-	{
+public class ClientProxy extends CommonProxy {
 
+    @Override
+    public void preInit() {
+    }
+
+    @Override
+    public void init() {
+	super.init();
+	ClientRegistry.bindTileEntitySpecialRenderer(TileManaChannel.class, new RenderChannel());
+    }
+
+    @Override
+    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+	TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
+
+	if (tileEntity != null) {
+	    switch (ID) {
+		case 0:
+
+		case 1:
+
+		case 2:
+		//return new GuiElectricFurnace(player.inventory, ((TileEntityElectricFurnace) tileEntity));
+	    }
 	}
 
-	@Override
-	public void init()
-	{
-		super.init();
-		ClientRegistry.bindTileEntitySpecialRenderer(TileManaChannel.class, new RenderChannel());
-	}
-
-	@Override
-	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z)
-	{
-		TileEntity tileEntity = world.getBlockTileEntity(x, y, z);
-
-		if (tileEntity != null)
-		{
-			switch (ID)
-			{
-				case 0:
-					
-				case 1:
-					
-				case 2:
-					//return new GuiElectricFurnace(player.inventory, ((TileEntityElectricFurnace) tileEntity));
-			}
-		}
-
-		return null;
-	}
+	return null;
+    }
 }

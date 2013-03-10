@@ -9,11 +9,10 @@ package net.manastream.core.ManaStream.Interfaces;
  * @author Xeology
  */
 public interface IMagicStorage {
-    
-	public double getMagic(Object... data);
 
-	public void setMagic(double joules, Object... data);
+    public double getMagic(Object... data);
 
-	public double getMaxMagic();
-    
+    public void setMagic(double joules, Object... data);
+
+    public double getMaxMagic();
 }

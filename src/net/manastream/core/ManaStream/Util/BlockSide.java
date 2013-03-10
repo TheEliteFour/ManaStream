@@ -9,15 +9,16 @@ package net.manastream.core.ManaStream.Util;
  * @author Xeology
  */
 public enum BlockSide {
+
     NORTH,
     SOUTH,
     WEST,
     EAST,
     TOP,
     BOTTOM;
-    
-    public BlockSide getOpposite(){
-	switch (this){
+
+    public BlockSide getOpposite() {
+	switch (this) {
 	    case NORTH:
 		return SOUTH;
 	    case SOUTH:

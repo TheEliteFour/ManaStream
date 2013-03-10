@@ -9,56 +9,48 @@ import net.minecraft.tileentity.TileEntity;
 
 /**
  * A TileEntity with some pre-added functionalities.
- * 
+ *
  * @author Calclavia
- * 
+ *
  */
-public abstract class TileEnergyAdvanced extends TileEntity
-{
-	protected long ticks = 0;
+public abstract class TileEnergyAdvanced extends TileEntity {
 
-	@Override
-	public void updateEntity()
-	{
-		if (this.ticks == 0)
-		{
-			this.initiate();
-		}
+    protected long ticks = 0;
 
-		if (this.ticks >= Long.MAX_VALUE)
-		{
-			this.ticks = 1;
-		}
-
-		this.ticks++;
+    @Override
+    public void updateEntity() {
+	if (this.ticks == 0) {
+	    this.initiate();
 	}
 
-	/**
-	 * Called on the TileEntity's first tick.
-	 */
-	public void initiate()
-	{
+	if (this.ticks >= Long.MAX_VALUE) {
+	    this.ticks = 1;
 	}
 
-	@Override
-	public int getBlockMetadata()
-	{
-		if (this.blockMetadata == -1)
-		{
-			this.blockMetadata = this.worldObj.getBlockMetadata(this.xCoord, this.yCoord, this.zCoord);
-		}
+	this.ticks++;
+    }
 
-		return this.blockMetadata;
+    /**
+     * Called on the TileEntity's first tick.
+     */
+    public void initiate() {
+    }
+
+    @Override
+    public int getBlockMetadata() {
+	if (this.blockMetadata == -1) {
+	    this.blockMetadata = this.worldObj.getBlockMetadata(this.xCoord, this.yCoord, this.zCoord);
 	}
 
-	@Override
-	public Block getBlockType()
-	{
-		if (this.blockType == null)
-		{
-			this.blockType = Block.blocksList[this.worldObj.getBlockId(this.xCoord, this.yCoord, this.zCoord)];
-		}
+	return this.blockMetadata;
+    }
 
-		return this.blockType;
+    @Override
+    public Block getBlockType() {
+	if (this.blockType == null) {
+	    this.blockType = Block.blocksList[this.worldObj.getBlockId(this.xCoord, this.yCoord, this.zCoord)];
 	}
+
+	return this.blockType;
+    }
 }

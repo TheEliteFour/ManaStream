@@ -26,10 +26,10 @@ import org.bouncycastle.util.Arrays;
 /**
  *
  * @author Xeology
- * 
- * Some code contained in this class is from UniversalElectricity and
- * all credit goes to it's respective creator.
- * 
+ *
+ * Some code contained in this class is from UniversalElectricity and all credit
+ * goes to it's respective creator.
+ *
  */
 public class TileManaChannel extends TileEnergyAdvanced implements IManaChannel, IPacketReceiver {
 

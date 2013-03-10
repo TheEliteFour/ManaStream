@@ -10,15 +10,14 @@ import net.minecraft.item.ItemStack;
  *
  * @author Xeology
  */
+public interface IMagicItem extends IMagicStorage, IMagic {
 
-public interface IMagicItem extends IMagicStorage, IMagic
-{
-	public double onReceive(double magic, ItemStack itemStack);
+    public double onReceive(double magic, ItemStack itemStack);
 
-	//When magic is requested
-	public double onUse(double magic, ItemStack itemStack);
+    //When magic is requested
+    public double onUse(double magic, ItemStack itemStack);
 
-	public boolean canReceiveMagic();
+    public boolean canReceiveMagic();
 
-	public boolean canProduceMagic();
+    public boolean canProduceMagic();
 }

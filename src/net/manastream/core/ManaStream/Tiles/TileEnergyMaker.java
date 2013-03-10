@@ -27,8 +27,6 @@ public abstract class TileEnergyMaker extends TileEnergyDisableable implements I
 	super.updateEntity();
     }
 
-    
-    
     @Override
     public int getPotency() {
 	return 1;

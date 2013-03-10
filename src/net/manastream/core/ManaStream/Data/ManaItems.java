@@ -9,5 +9,4 @@ package net.manastream.core.ManaStream.Data;
  * @author Xeology
  */
 public class ManaItems {
-    
 }

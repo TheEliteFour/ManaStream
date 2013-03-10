@@ -12,6 +12,6 @@ public interface IDisableable {
 
     //Tics to disable for
     public void onDisable(int time);
-    
+
     public boolean isDisabled();
 }
