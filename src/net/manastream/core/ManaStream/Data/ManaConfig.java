@@ -8,6 +8,7 @@ import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import java.io.File;
 import java.io.IOException;
+import net.manastream.content.ManaStream.Textures.TexturePather;
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.common.Configuration;
 
@@ -57,7 +58,7 @@ public class ManaConfig {
     }
 
     public String getTexturePath() {
-	return "/net/manastream/content/ManaStream/Textures";
+	return TexturePather.getTexturePath().replace("TexturePather.class", "");
     }
 
     public int getBlockID(String block, int def) {

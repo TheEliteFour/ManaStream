@@ -5,6 +5,7 @@
 package net.manastream.content.ManaStream.Blocks.Channels;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import java.io.File;
 import net.manastream.content.ManaStream.Items.Channels.ItemBurntChannel;
 import net.manastream.content.ManaStream.Tiles.Channels.TileBurntChannel;
 import net.manastream.core.ManaStream.Blocks.BlockChannel;

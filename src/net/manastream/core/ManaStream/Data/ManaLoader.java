@@ -24,7 +24,7 @@ public class ManaLoader {
     public void registerTextures() {
 	ManaTextures texts = ManaStream.getStatic().getModRegistry().getTextureRegistry();
 	ManaConfig config = new ManaConfig();
-	String texPath = config.getTexturePath() + "/";
+	String texPath = config.getTexturePath();
 	texts.PRIMAL_CHANNEL = texPath + "PrimalChannel.png";
 	texts.PURE_CHANNEL = texPath + "PureChannel.png";
 	texts.POTENT_CHANNEL = texPath + "PotentChannel.png";
