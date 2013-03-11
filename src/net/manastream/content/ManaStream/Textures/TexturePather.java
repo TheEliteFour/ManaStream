@@ -12,6 +12,6 @@ public class TexturePather {
 
     public static String getTexturePath() {
 	ClassLoader loader = TexturePather.class.getClassLoader();
-	return loader.getResource("net/manastream/content/ManaStream/Textures/TexturePather.class").getPath();
+	return "/net/manastream/content/ManaStream/Textures/";
     }
 }

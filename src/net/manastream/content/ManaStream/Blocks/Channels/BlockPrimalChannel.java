@@ -8,6 +8,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import net.manastream.content.ManaStream.Items.Channels.ItemPrimalChannel;
 import net.manastream.content.ManaStream.Tiles.Channels.TilePrimalChannel;
 import net.manastream.core.ManaStream.Blocks.BlockChannel;
+import net.manastream.core.ManaStream.Data.ManaConfig;
 import net.manastream.core.ManaStream.ManaStream;
 import net.manastream.core.ManaStream.Util.MSTab;
 import net.minecraft.block.material.Material;
@@ -27,10 +28,11 @@ public class BlockPrimalChannel extends BlockChannel {
 	setResistance(0.2F);
 	setHardness(0.1f);
 	setBlockBounds(0.30F, 0.30F, 0.30F, 0.70F, 0.70F, 0.70F);
-	blockIndexInTexture = 19;
 	setCreativeTab(MSTab.INSTANCE);
+	this.blockIndexInTexture=0;
 	GameRegistry.registerBlock(this, ItemPrimalChannel.class, "Primal Channel");
     }
+
 
     @Override
     public boolean isOpaqueCube() {
@@ -54,6 +56,7 @@ public class BlockPrimalChannel extends BlockChannel {
 
     @Override
     public String getTextureFile() {
-	return ManaStream.getStatic().getModRegistry().getTextureRegistry().PRIMAL_CHANNEL;
+	//return ManaStream.getStatic().getModRegistry().getTextureRegistry().PRIMAL_CHANNEL;
+	return new ManaConfig().getTexturePath().replace("Texturepather.class", "");
     }
 }

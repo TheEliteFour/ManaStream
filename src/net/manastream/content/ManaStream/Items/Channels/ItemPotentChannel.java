@@ -25,6 +25,11 @@ public class ItemPotentChannel extends ItemBlock {
     public int getMetadata(int damage) {
 	return damage;
     }
+    
+    @Override
+    public String getItemDisplayName(ItemStack it){
+	return "Potent Channel";
+    }
 
     @Override
     public void addInformation(ItemStack item, EntityPlayer player, List info, boolean par4) {

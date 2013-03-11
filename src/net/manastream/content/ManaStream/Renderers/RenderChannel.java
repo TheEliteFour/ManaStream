@@ -45,8 +45,9 @@ public class RenderChannel extends TileEntitySpecialRenderer {
 	}
 	if (tileEntity instanceof TileBurntChannel) {
 	    bindTextureByName(ManaStream.getStatic().getModRegistry().getTextureRegistry().BURNT_CHANNEL);
-	    tileEntity.worldObj.spawnParticle("smoke", tileEntity.xCoord, tileEntity.yCoord - .5, tileEntity.zCoord, 0, -1, 0);
+	    tileEntity.worldObj.spawnParticle("smoke", tileEntity.xCoord+ .5, tileEntity.yCoord + .5, tileEntity.zCoord+ .5, 0, .1, 0);
 	}
+	
 	GL11.glPushMatrix();
 	GL11.glTranslatef((float) d + 0.5F, (float) d1 + 1.5F, (float) d2 + 0.5F);
 	GL11.glScalef(1.0F, -1F, -1F);

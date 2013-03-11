@@ -25,6 +25,11 @@ public class ItemChaoticChannel extends ItemBlock {
     public int getMetadata(int damage) {
 	return damage;
     }
+    
+    @Override
+    public String getItemDisplayName(ItemStack it){
+	return "Chaotic Channel";
+    }
 
     @Override
     public void addInformation(ItemStack item, EntityPlayer player, List info, boolean par4) {

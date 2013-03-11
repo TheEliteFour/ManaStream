@@ -20,6 +20,11 @@ public class ItemBurntChannel extends ItemBlock {
 	this.setMaxDamage(0);
 	this.setHasSubtypes(true);
     }
+    
+    @Override
+    public String getItemDisplayName(ItemStack it){
+	return "Burnt Channel";
+    }
 
     @Override
     public int getMetadata(int damage) {

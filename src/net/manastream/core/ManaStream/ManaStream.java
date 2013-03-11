@@ -45,8 +45,7 @@ public class ManaStream {
     
     @PreInit
     public void init(FMLPreInitializationEvent e) {	
-	setStatic();
-	proxy.preInit();
+	setStatic();	
 	setModItemRegistry(new ManaRegistry());
 	ManaLoader loader = new ManaLoader();
 	logger.info("[ManaStream] loading content and hooks!");	
@@ -60,6 +59,7 @@ public class ManaStream {
 	loader.registerCommands();
 	loader.registerListeners();
 	MSTab.setItemStack(new ItemStack(322, 1, 1));
+	proxy.preInit();
 	logger.info("[ManaStream] done content and hooks!");	
 	
     }

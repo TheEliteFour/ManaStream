@@ -30,6 +30,11 @@ public class ManaLoader {
 	texts.POTENT_CHANNEL = texPath + "PotentChannel.png";
 	texts.CHAOTIC_CHANNEL = texPath + "ChaoticChannel.png";
 	texts.BURNT_CHANNEL = texPath + "BurntChannel.png";
+	texts.PRIMAL_CHANNEL_ITEM = texPath + "PrimalChannelItem.png";
+	texts.PURE_CHANNEL_ITEM = texPath + "PureChannelItem.png";
+	texts.POTENT_CHANNEL_ITEM = texPath + "PotentChannelItem.png";
+	texts.CHAOTIC_CHANNEL_ITEM = texPath + "ChaoticChannelItem.png";
+	texts.BURNT_CHANNEL_ITEM = texPath + "BurntChannelItem.png";
     }
 
     public void registerItems() {

@@ -6,6 +6,7 @@ package net.manastream.content.ManaStream.Blocks.Channels;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.manastream.content.ManaStream.Items.Channels.ItemPureChannel;
+import net.manastream.content.ManaStream.Textures.TexturePather;
 import net.manastream.content.ManaStream.Tiles.Channels.TilePureChannel;
 import net.manastream.core.ManaStream.Blocks.BlockChannel;
 import net.manastream.core.ManaStream.ManaStream;
@@ -27,8 +28,7 @@ public class BlockPureChannel extends BlockChannel {
 	setResistance(0.2F);
 	setHardness(0.1f);
 	setBlockBounds(0.30F, 0.30F, 0.30F, 0.70F, 0.70F, 0.70F);
-	blockIndexInTexture = 19;
-	setCreativeTab(MSTab.INSTANCE);
+	setCreativeTab(MSTab.INSTANCE);	
 	GameRegistry.registerBlock(this, ItemPureChannel.class, "Pure Channel");
     }
 
@@ -54,6 +54,6 @@ public class BlockPureChannel extends BlockChannel {
 
     @Override
     public String getTextureFile() {
-	return ManaStream.getStatic().getModRegistry().getTextureRegistry().PURE_CHANNEL;
+	return TexturePather.getTexturePath()+"PureChannelItem.png";
     }
 }

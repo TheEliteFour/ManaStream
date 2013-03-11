@@ -17,4 +17,11 @@ public class ManaTextures {
     public String POTENT_CHANNEL;
     public String PURE_CHANNEL;
     public String CHAOTIC_CHANNEL;
+    public String BURNT_CHANNEL_ITEM;
+    public String PRIMAL_CHANNEL_ITEM;
+    public String POTENT_CHANNEL_ITEM;
+    public String PURE_CHANNEL_ITEM;
+    public String CHAOTIC_CHANNEL_ITEM;
+    
+    
 }

@@ -19,6 +19,12 @@ public class ItemPureChannel extends ItemBlock {
 	super(id);
 	this.setMaxDamage(0);
 	this.setHasSubtypes(true);
+	this.setIconIndex(0);
+    }
+    
+    @Override
+    public String getItemDisplayName(ItemStack it){
+	return "Pure Channel";
     }
 
     @Override

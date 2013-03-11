@@ -28,7 +28,6 @@ public class BlockBurntChannel extends BlockChannel {
 	setResistance(0.2F);
 	setHardness(0.1f);
 	setBlockBounds(0.30F, 0.30F, 0.30F, 0.70F, 0.70F, 0.70F);
-	blockIndexInTexture = 19;
 	setCreativeTab(MSTab.INSTANCE);
 	GameRegistry.registerBlock(this, ItemBurntChannel.class, "Burnt Channel");
     }

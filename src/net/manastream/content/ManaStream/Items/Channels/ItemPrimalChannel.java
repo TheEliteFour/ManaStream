@@ -20,6 +20,11 @@ public class ItemPrimalChannel extends ItemBlock {
 	this.setMaxDamage(0);
 	this.setHasSubtypes(true);
     }
+    
+    @Override
+    public String getItemDisplayName(ItemStack it){
+	return "Primal Channel";
+    }
 
     @Override
     public int getMetadata(int damage) {
